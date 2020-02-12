@@ -1,0 +1,40 @@
+header {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 1020px;
+    height: 89px;
+    margin: 0 auto;   
+    background: #2d303a;
+    border-bottom: 6px solid #323746;
+    color: #fff;
+}
+
+.logo {  
+    width: 30%;
+    height: 89px;
+    box-sizing: border-box;
+    padding: 34px 0px 35px 40px;
+    font-family: Lato-Bold, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 29px;
+}
+
+.logo span {
+    color: #f06c64;
+}
+
+.nav {
+
+}
+
+a {
+    font-family: Lato-Bold, AdobeInvisFont, MyriadPro-Regular;
+    font-size: 12px;
+    text-align: justify;
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #f06c64;
+}
