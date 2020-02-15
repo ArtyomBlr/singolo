@@ -8,9 +8,10 @@ header {
     justify-content: space-between;
     max-width: 1020px;
     height: 89px;
-    margin: -8px auto 0;   
+    margin: -8px 0 0 -8px;   
     background: #2d303a;
     color: #fff;
+    border-bottom: 6px solid #323746;
 }
 
 .logo {  
@@ -47,6 +48,11 @@ header {
 }
 
 li {
+    list-style-type: disc;
+    color: grey;
+}
+
+#li {
     list-style-type: none;
 }
 
@@ -63,12 +69,48 @@ a:hover {
 
 main {
     max-width: 1020px;
-    margin: 0px auto;
+    margin: 0 0 0 -8px;  
 }
 
 .slider {
-    /*display: block;*/
     height: 600px;
     background: #f06c64;
-    border-top: 6px solid #323746;
+}
+
+.photo-vertical {
+    position: absolute;
+    left: 110px;
+    top: 147px;
+}
+
+.photo-horizontal {
+    position: absolute;
+    left: 423px;
+    top: 267px;
+}
+
+.buttonl {
+    position: absolute;
+    left: 42px;
+    top: 376px; 
+    width: 16px;
+    height: 27px;
+    background-image: url('assets/img/button-left.png');
+}
+
+.buttonr {
+    position: absolute;
+    left: 964px;
+    top: 376px; 
+    width: 16px;
+    height: 27px;
+    background-image: url('assets/img/button-right.png');
+}
+
+.buttonl:hover {
+    background-image: url('assets/img/button-left-black.png');
+}
+
+.buttonr:hover {
+    background-image: url('assets/img/button-right-black.png');
 }
