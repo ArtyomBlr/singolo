@@ -3,6 +3,21 @@
     src: url('assets/fonts/Lato-Bold.ttf');
 }
 
+@font-face {
+    font-family: 'Lato-Black';
+    src: url('assets/fonts/Lato-Black.ttf');
+}
+
+@font-face {
+    font-family: 'Lato-Regular';
+    src: url('assets/fonts/Lato-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Lato-Light';
+    src: url('assets/fonts/Lato-Light.ttf');
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -73,8 +88,9 @@ main {
 }
 
 .slider {
-    height: 600px;
+    height: 594px;
     background: #f06c64;
+    border-bottom: 6px solid#ea676b;
 }
 
 .photo-vertical {
@@ -113,4 +129,82 @@ main {
 
 .buttonr:hover {
     background-image: url('assets/img/button-right-black.png');
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 45px 40px 68px 40px;
+    height: 496px;
+    background: #f2f2f2;
+    border-bottom: 6px solid#ffffff;
+}
+
+.block1 {
+   /*border: 1px solid red;*/
+}
+
+.block1 h1 {
+    font-family: Lato-Black;
+    font-size: 30px;
+    line-height: 18px;
+    color: #666d89;
+    text-align: left;
+}
+
+.block1 p {
+    font-family: Lato-Light;
+    font-size: 18px;
+    line-height: 30px;
+    color: #767e9e;
+    text-align: left;
+}
+
+.block2 {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.positions {
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+ }
+
+.text {
+    display: flex;
+    flex-direction: column;
+    margin: -16px 0px 0px 20px;
+    width: 220px;
+}
+
+.block2 h1 {
+    font-family: Lato-Black;
+    text-align: left;
+    font-size: 18px;
+    line-height: 18px;
+    color: #666d89;
+}
+
+.block2 p {
+    margin-top: -5px;
+    font-family: Lato-Regular;
+    text-align: left;
+    font-size: 12px;
+    line-height: 22px;
+    color: #767e9e;
+}
+
+.ellipse {
+    width: 59px;
+    height: 59px;
+    box-sizing: border-box;
+    padding: 12px 12px;
+    border-radius: 29px;
+    border: 2px solid #666d89;
 }
