@@ -33,7 +33,7 @@ header {
     width: 200px;
     height: 89px;
     box-sizing: border-box;
-    padding: 30px 0px 35px 40px;
+    padding: 27px 0px 35px 38px;
     
 }
 
@@ -63,12 +63,13 @@ header {
 }
 
 li {
-    list-style-type: disc;
+    list-style-image: url('assets/img/list-style.png');
     color: grey;
 }
 
 #li {
     list-style-type: none;
+    list-style-image: none;
 }
 
 a {
@@ -157,23 +158,27 @@ main {
     font-family: Lato-Light;
     font-size: 18px;
     line-height: 30px;
+    letter-spacing: -0.1px;
     color: #767e9e;
     text-align: left;
 }
 
 .block2 {
-    border: 1px solid red;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 30px;
+    margin-top: 29px;
 }
 
 .positions {
     display: flex;
     flex-direction: row;
     width: 300px;
+ }
+ 
+ .addpos {
+     margin-top: 18px;
  }
 
 .text {
@@ -196,6 +201,7 @@ main {
     font-family: Lato-Regular;
     text-align: left;
     font-size: 12px;
+    letter-spacing: 0px;
     line-height: 22px;
     color: #767e9e;
 }
@@ -203,8 +209,37 @@ main {
 .ellipse {
     width: 59px;
     height: 59px;
-    box-sizing: border-box;
-    padding: 12px 12px;
     border-radius: 29px;
     border: 2px solid #666d89;
 }
+
+#pen {
+    box-sizing: border-box;
+    padding: 12px 12px;
+}
+
+#bulb {
+    box-sizing: border-box;
+    padding: 11px 17px;
+}
+
+#heart {
+    box-sizing: border-box;
+    padding: 14px 12px;
+}
+
+#phone {
+    box-sizing: border-box;
+    padding: 12px 18px;
+}
+
+#bubble {
+    box-sizing: border-box;
+    padding: 14px 12px;
+}
+
+#star {
+    box-sizing: border-box;
+    padding: 12px 12px;
+}
+
