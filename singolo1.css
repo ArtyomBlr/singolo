@@ -18,12 +18,16 @@
     src: url('assets/fonts/Lato-Light.ttf');
 }
 
+body {
+    background: white;
+}
+
 header {
     display: flex;
     justify-content: space-between;
     max-width: 1020px;
     height: 89px;
-    margin: -8px 0 0 -8px;   
+    margin: -8px auto 0 auto;   
     background: #2d303a;
     color: #fff;
     border-bottom: 6px solid #323746;
@@ -85,7 +89,7 @@ a:hover {
 
 main {
     max-width: 1020px;
-    margin: 0 0 0 -8px;  
+    margin: 0 auto 0 auto;  
 }
 
 .slider {
@@ -95,30 +99,30 @@ main {
 }
 
 .photo-vertical {
-    position: absolute;
+    position: relative;
     left: 110px;
-    top: 147px;
+    top: -2px;
 }
 
 .photo-horizontal {
-    position: absolute;
-    left: 423px;
-    top: 267px;
+    position: relative;
+    left: 174px;
+    top: -126px;
 }
 
 .buttonl {
-    position: absolute;
+    position: relative;
     left: 42px;
-    top: 376px; 
+    top: 282px; 
     width: 16px;
     height: 27px;
     background-image: url('assets/img/button-left.png');
 }
 
 .buttonr {
-    position: absolute;
+    position: relative;
     left: 964px;
-    top: 376px; 
+    top: 254px; 
     width: 16px;
     height: 27px;
     background-image: url('assets/img/button-right.png');
@@ -140,10 +144,6 @@ main {
     height: 496px;
     background: #f2f2f2;
     border-bottom: 6px solid#ffffff;
-}
-
-.block1 {
-   /*border: 1px solid red;*/
 }
 
 .block1 h1 {
