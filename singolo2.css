@@ -19,7 +19,7 @@
 }
 
 .portfolio {
-    margin: -8px auto;
+    margin: -8px auto 0;
     max-width: 1020px;
     height: 864px;
     background: #2d303a;
@@ -84,3 +84,114 @@
 .portfolio-pictures img {
     margin-bottom: 16px;
 }
+
+.about-us {
+    margin: 0px auto;
+    max-width: 1020px;
+    height: 728px;
+    box-sizing: border-box;
+    padding: 43px 35px 0px 40px;
+    background: #f2f2f2;
+    border-bottom: 6px solid #ffffff;
+}
+
+.about-us h1 {
+    font-family: Lato-Black;
+    font-size: 30px;
+    line-height: 18px;
+    letter-spacing: 0px;
+    color: #666d89;
+}
+
+.about-us p {
+    font-family: Lato-Light;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0px;
+    color: #767e9e;
+}
+
+.persons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 47px;
+}
+
+.person {
+    width: 305px;
+}
+
+.person h3 {
+    margin-top: 11px;
+    font-family: Lato-Black;
+    font-size: 18px;
+    line-height: 18px;
+    color: #666d89;
+}
+
+.person p {
+    margin-top: -7px;
+    font-family: Lato-Regular;
+    font-size: 12px;
+    line-height: 22px;
+    letter-spacing: -0.5px; 
+    color: #767e9e;  
+}
+
+.contacts {
+    display: flex;
+    flex-direction: row;
+    margin-top: 21px;
+}
+
+.contact-img {
+    margin-right: 8px;
+    box-sizing: border-box;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #666d89;
+    border-radius: 50%;
+}
+
+.contact-img.facebook {
+    background: url('assets/img/facebook.png') no-repeat;
+    background-position: 11px 8px;
+}
+
+.contact-img.facebook:hover {
+    background: url('assets/img/facebook-black.png') no-repeat;
+    background-position: 11px 8px;
+}
+
+.contact-img.google {
+    background: url('assets/img/google.png') no-repeat;
+    background-position: 10px 8px;
+}
+
+.contact-img.google:hover {
+    background: url('assets/img/google-black.png') no-repeat;
+    background-position: 10px 8px;
+}
+
+.contact-img.twitter {
+    background: url('assets/img/twitter.png') no-repeat;
+    background-position: 9px 8px;
+}
+
+.contact-img.twitter:hover {
+    background: url('assets/img/twitter-black.png') no-repeat;
+    background-position: 9px 8px;
+}
+
+.contact-img.linkedin {
+    background: url('assets/img/linkedin.png') no-repeat;
+    background-position: 10px 8px;
+}
+
+.contact-img.linkedin:hover {
+    background: url('assets/img/linkedin-black.png') no-repeat;
+    background-position: 10px 8px;
+}
+
