@@ -162,42 +162,47 @@
 }
 
 .contact-img.facebook {
+    cursor: pointer;
     background: url('assets/img/facebook.png') no-repeat;
-    background-position: 12px 9px;
+    background-position: 11px 8px;
 }
 
 .contact-img.facebook:hover {
     background: url('assets/img/facebook-black.png') no-repeat;
-    background-position: 12px 9px;
+    background-position: 11px 8px;
 }
 
 .contact-img.google {
+    cursor: pointer;
     background: url('assets/img/google.png') no-repeat;
-    background-position: 9px 9px;
+    background-position: 8px 8px;
 }
 
 .contact-img.google:hover {
     background: url('assets/img/google-black.png') no-repeat;
-    background-position: 9px 9px;
+    background-position: 8px 8px;
 }
 
 .contact-img.twitter {
+    cursor: pointer;
     background: url('assets/img/twitter.png') no-repeat;
-    background-position: 9px 9px;
+    background-position: 8px 9px;
 }
 
 .contact-img.twitter:hover {
     background: url('assets/img/twitter-black.png') no-repeat;
-    background-position: 9px 9px;
+    background-position: 8px 9px;
 }
 
 .contact-img.linkedin {
+    cursor: pointer;
     background: url('assets/img/linkedin.png') no-repeat;
-    background-position: 9px 9px;
+    background-position: 8px 8px;
 }
 
 .contact-img.linkedin:hover {
     background: url('assets/img/linkedin-black.png') no-repeat;
-    background-position: 9px 9px;
+    background-position: 8px 8px;
 }
+
 

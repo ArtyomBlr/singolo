@@ -12,14 +12,12 @@
                 <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                 <div class="enter-form">
                     <div class="main-form">
-                        <form action="#" method="get" class="form-to-use">
-                            <input type="text"  placeholder="Name" required class="name">
-                            <input type="text"  placeholder="Email" required class="mail">
-                            <input type="text"  placeholder="Subject" class="subject">
-                            <textarea name="description" placeholder="Describe your project in detail..." class="textarea">
-
-                            </textarea>
-
+                        <form action="#" method="get" name="form" class="form-to-use">
+                            <input type="text"  name="Name" placeholder="Name (Required)" required class="name">
+                            <input type="email"  name="Mail" placeholder="Email (Required)" required class="mail">
+                            <input type="text"  name="Subject" placeholder="Subject" class="subject">
+                            <textarea name="description" placeholder="Describe your project in detail..." class="textarea"></textarea>
+                            <button type="submit" class="form-button">Submit</button>
                         </form>
                     </div>
                     <div class="information">
@@ -29,17 +27,23 @@
                             <img src="assets/img/location.png"><span> Elm St. 14/05 Lost City</span><br>
                         </div>    
                         <div class="contact-info2">
-                            <img src="assets/img/footer-phone.png"><span> 03528 331 86 35</span><br>
+                            <a href="tel:035283318635"><img src="assets/img/footer-phone.png"></a><span> 03528 331 86 35</span><br>
                         </div>
                         <div class="contact-info3"> 
-                            <img src="assets/img/mail.png"><span> info@singolo.comy</span><br>
+                            <a href="mailto:info@singolo.comy"><img src="assets/img/mail.png"></a><span> info@singolo.comy</span><br>
                         </div>   
                     </div>
                 </div>
             </article>
         </main>
         <footer>
-
+            <p>&copy; Copyright2013</p>
+            <div class="footer-links">
+                <div class="contact-img facebook"></div>
+                <div class="contact-img google"></div>
+                <div class="contact-img twitter"></div>
+                <div class="contact-img linkedin"></div>
+            </div>
         </footer>
     </body>
 </html>

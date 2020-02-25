@@ -21,16 +21,17 @@
 .form {
     margin: 0 auto;
     box-sizing: border-box;
-    padding: 56px 41px 18px;
+    padding: 41px 41px 18px;
     width: 1020px;
-    height: 648px;
+    height: 654px;
     background: #f06c64;
+    border: 1px solid #ea676b;
 }
 
 .form h1 {
     font-family: Lato-Black;
     font-size: 30px;
-    line-height: 18px;
+    line-height: 21px;
     letter-spacing: -0.5px;
     color: #f0d8d9;
 }
@@ -46,19 +47,63 @@
 .enter-form {
     display: flex;
     flex-direction: row;
-    padding: 5px 0px;
+    padding: 6px 0px;
 }
 
 .main-form {
     width: 620px;
 }
 
+.form-to-use {  
+    margin: 21px 0px 0px -2px;
+}
 
+.name, .mail, .subject {
+    width: 619px;
+    height: 37px;
+    margin-bottom: 17px;
+    padding: 0px 14px;
+    border-radius: 5px;
+    border: none;
+    background-color: #d6564f;
+    box-sizing: border-box;
+    font-family: Lato-Regular;
+    font-size: 12px;
+    color: #f48c8f; 
+}
+
+.textarea {
+    width: 619px;
+    height: 201px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    padding: 10px 14px;
+    border-radius: 5px;
+    resize: none;
+    border: none;
+    background-color: #d6564f; 
+    font-family: Lato-Regular;
+    font-size: 12px;
+    color: #f48c8f; 
+}
+
+.form-button {
+    margin-left: 538px;
+    width: 80px;
+    padding: 10px 14px;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    box-sizing: border-box;
+    font-family: Lato-Bold;
+    font-size: 12px;
+    color: #d6564f; 
+}
 
 .information {
     width: 316px;
     box-sizing: border-box;
-    padding: 13px 0px 0px 20px;
+    padding: 10px 0px 0px 19px;
 }
 
 .information h3 {
@@ -102,4 +147,84 @@
 
 .contact-info3 span {
     padding-left: 6px;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0px 40px 0px 42px;
+    width: 1020px;
+    height: 76px;
+    background-color: #2d303a;
+}
+
+footer p {
+    font-family: Lato-Regular;
+    font-size: 12px;
+    line-height: 30px;
+    letter-spacing: 0px;
+    color: #626984;
+}
+
+.footer-links {
+    position: relative;
+    left: 693px;
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-img {
+    margin-right: 8px;
+    box-sizing: border-box;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #666d89;
+    border-radius: 50%;
+}
+
+.contact-img.facebook {
+    cursor: pointer;
+    background: url('assets/img/facebook.png') no-repeat;
+    background-position: 11px 8px;
+}
+
+.contact-img.facebook:hover {
+    background: url('assets/img/facebook-black.png') no-repeat;
+    background-position: 11px 8px;
+}
+
+.contact-img.google {
+    cursor: pointer;
+    background: url('assets/img/google.png') no-repeat;
+    background-position: 8px 8px;
+}
+
+.contact-img.google:hover {
+    background: url('assets/img/google-black.png') no-repeat;
+    background-position: 8px 8px;
+}
+
+.contact-img.twitter {
+    cursor: pointer;
+    background: url('assets/img/twitter.png') no-repeat;
+    background-position: 8px 9px;
+}
+
+.contact-img.twitter:hover {
+    background: url('assets/img/twitter-black.png') no-repeat;
+    background-position: 8px 9px;
+}
+
+.contact-img.linkedin {
+    cursor: pointer;
+    background: url('assets/img/linkedin.png') no-repeat;
+    background-position: 8px 8px;
+}
+
+.contact-img.linkedin:hover {
+    background: url('assets/img/linkedin-black.png') no-repeat;
+    background-position: 8px 8px;
 }
