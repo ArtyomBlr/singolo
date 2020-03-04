@@ -131,9 +131,12 @@
 
 .person h3 {
     margin-top: 11px;
+    width: 300px;
+    overflow: hidden;
     font-family: Lato-Black;
     font-size: 18px;
     line-height: 18px;
+    white-space: nowrap;
     color: #666d89;
 }
 
