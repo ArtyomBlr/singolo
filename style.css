@@ -37,8 +37,7 @@ header {
     width: 200px;
     height: 89px;
     box-sizing: border-box;
-    padding: 27px 0px 35px 38px;
-    
+    padding: 27px 0px 35px 40px;
 }
 
 .logo h1 {
@@ -191,6 +190,7 @@ main {
     display: flex;
     flex-direction: row;
     width: 300px;
+    margin-left: 1px;
  }
  
  .addpos {
@@ -200,12 +200,14 @@ main {
 .text {
     display: flex;
     flex-direction: column;
-    margin: -16px 0px 2px 20px;
+    margin: -17px 0px 6px 22px;
     width: 220px;
+    height: 115px;
+    overflow: hidden;
 }
 
 .block2 h1 {
-    margin: 14px 1px;
+    margin: 14px 0px;
     font-family: Lato-Black;
     text-align: left;
     font-size: 18px;
@@ -214,7 +216,7 @@ main {
 }
 
 .block2 p {
-    margin-top: -5px;
+    margin-top: -4px;
     font-family: Lato-Regular;
     text-align: left;
     font-size: 12px;
@@ -247,7 +249,7 @@ main {
 
 #phone {
     box-sizing: border-box;
-    padding: 12px 18px;
+    padding: 12px 17px;
 }
 
 #bubble {
@@ -263,14 +265,14 @@ main {
 .portfolio {
     margin: 0 auto;
     max-width: 1020px;
-    height: 864px;
+    height: 863px;
     background: #2d303a;
     border-bottom: 6px solid #323746;
 }
 
 .portfolio-navigation {
     box-sizing: border-box;
-    padding: 43px 40px 18px;
+    padding: 42px 40px 18px;
 }
 
 .portfolio-navigation h1 {
@@ -309,6 +311,10 @@ main {
     cursor: pointer;
 }
 
+#button-all {
+    padding: 0px 7px;
+}
+
 .buttons button:hover {
     border: 1px solid  white;
     color: white;
@@ -333,7 +339,7 @@ main {
 .about-us {
     margin: 0px auto;
     max-width: 1020px;
-    height: 733px;
+    height: 734px;
     box-sizing: border-box;
     padding: 42px 40px 0px 40px;
     background: #f2f2f2;
@@ -378,6 +384,7 @@ main {
     font-size: 18px;
     line-height: 18px;
     color: #666d89;
+    overflow: hidden;
 }
 
 .person p {
