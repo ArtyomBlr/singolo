@@ -54,6 +54,7 @@ header {
 }
 
 .navbar {
+    margin-left: 371px;
     width: 450px;
     height: 89px;
 }
@@ -298,7 +299,7 @@ main {
     width: 288px;
 }
 
-.buttons button {
+.single-button {
     height: 22px;
     padding: 0px 6px;
     border: 1px solid  #767e9e;
@@ -650,6 +651,20 @@ footer p {
     width: 210px;
     height: 178px;
     border: 5px solid #F06C64;
+}
+
+.active__menu {
+    color: #F06C64;
+    border-bottom: 3px solid #F06C64;
+    padding-bottom: 6px;
+}
+
+.buttons .buttons-style {
+    color: #F06C64;
+    border: 1px solid #F06C64;
+    border-radius: 5px;
+    font-family: Lato-Bold;
+    background: none;
 }
 
 
