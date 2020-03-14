@@ -1,7 +1,7 @@
-// function for img blocks addBorder and changeImgOrder
+// function for img blocks addBorder, changeButtonActivity and changeImgOrder
 
 const PORTFOLIO = document.querySelectorAll('.portfolio-pictures')[0];
-
+const ACTIVE_BUTTONS = document.querySelectorAll('.buttons')[0];
 
 PORTFOLIO.addEventListener('click', addBorder, false);
 
@@ -12,11 +12,20 @@ function addBorder(event) {
     }
 }
 
+var imgCollection = document.querySelectorAll('.portfolio-pictures')[0].querySelectorAll('img');
 
-const ACTIVE_BUTTONS = document.querySelectorAll('.buttons')[0];
-ACTIVE_BUTTONS.addEventListener('click', changeImgOrder, false);
+/*for(let i = 1; i < imgCollection.length; i++){
+    imgCollection[i].style.order=i++
+}*/
 
-function changeImgOrder(event){
+imgCollection.forEach(function addOrder(value, i, arr){
+    let order_number = i++
+    value.style.order=order_number;
+})
+
+ACTIVE_BUTTONS.addEventListener('click', changeButtonActivity, false);
+
+function changeButtonActivity(event){
     if(event.target !== event.currentTarget){
         ACTIVE_BUTTONS.querySelectorAll('.buttons button').forEach(el => el.classList.remove('buttons-style'));
         ACTIVE_BUTTONS.querySelectorAll('.buttons button').forEach(el => el.classList.add('single-button'));
@@ -25,7 +34,14 @@ function changeImgOrder(event){
     }
 }
 
+ACTIVE_BUTTONS.addEventListener('click', changeImgOrder, false);
 
+function changeImgOrder(event) {
+    imgCollection.forEach(function changeOrder(value, i, arr){
+        let changedOrderNumber = (i++) + Math.floor((Math.random()*10));
+        value.style.order=changedOrderNumber;
+    })
+}
 
 
 
