@@ -65,9 +65,18 @@ FORM_BUTTON_SUBMIT.addEventListener('click', submitForm, false);
 function submitForm(event){
     event.preventDefault();
     let subject = document.querySelectorAll('#subject')[0].value.toString();
-    document.querySelectorAll('#theme')[0].innerText = subject;
+    if(subject == ""){
+        document.querySelectorAll('#theme')[0].innerText = "Без темы";
+    } else {
+        document.querySelectorAll('#theme')[0].innerText = 'Тема: ' + subject;
+    }
+
     let textArea = document.querySelectorAll('#textarea')[0].value.toString();
-    document.querySelectorAll('#description')[0].innerText = textArea;
+    if(textArea == ""){
+        document.querySelectorAll('#description')[0].innerText = "Без описания";
+    } else {
+        document.querySelectorAll('#description')[0].innerText = 'Описание: ' + textArea;
+    }
     HIDDEN_BLOCK.style.visibility="visible";
 }
 
