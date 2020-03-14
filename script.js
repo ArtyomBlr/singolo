@@ -53,8 +53,7 @@ function addStyleToNavigation(event){
     }
 }
 
-
-// function for form 
+// function for form submitForm and closeMessage
 
 const FORM_BUTTON_SUBMIT= document.querySelectorAll('.form-button')[0];
 const FORM_BUTTON_OK= document.querySelectorAll('#button_close')[0];
