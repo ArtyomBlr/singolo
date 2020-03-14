@@ -85,3 +85,32 @@ FORM_BUTTON_OK.addEventListener('click', closeMessage, false);
 function closeMessage(event){
     HIDDEN_BLOCK.style.visibility="hidden";
 }
+
+
+// function for slider
+
+
+const PHONE = document.querySelectorAll('.photo-vertical')[0];
+const PHONE_HOR = document.querySelectorAll('.photo-horizontal')[0];
+const DIV_WITH_PHONE = document.querySelectorAll('.screen')[0];
+const DIV_WITH_PHONE_HOR = document.querySelectorAll('.screen_hor')[0];
+
+
+/*if(DIV_WITH_PHONE.querySelectorAll('.off_screen')[0].style.visibility === "hidden"){
+     function offScreen(){
+        DIV_WITH_PHONE.querySelectorAll('.off_screen')[0].style.visibility="visible";
+    }
+}*/
+
+PHONE.addEventListener('click', () => {
+    if (DIV_WITH_PHONE.querySelectorAll('.off_screen')[0].style.display == 'none') {
+        DIV_WITH_PHONE.querySelectorAll('.off_screen')[0].style.display = 'block';
+    } else if (DIV_WITH_PHONE.querySelectorAll('.off_screen')[0].style.display == 'block') {
+        DIV_WITH_PHONE.querySelectorAll('.off_screen')[0].style.display = 'none';
+    };
+});
+
+
+/*PHONE_HOR.addEventListener('click', () => {
+    DIV_WITH_PHONE_HOR.querySelectorAll('.off_screen_hor')[0].classList.add('visible_screen');
+});*/
