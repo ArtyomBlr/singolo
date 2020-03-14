@@ -54,7 +54,6 @@ header {
 }
 
 .navbar {
-    margin-left: 371px;
     width: 450px;
     height: 89px;
 }
@@ -99,12 +98,14 @@ a:hover {
 }
 
 main {
-    max-width: 1020px;
+    /*max-width: 1020px;*/
     margin: 0 auto 0 auto;  
 }
 
 .slider {
+    width: 1020px;
     height: 594px;
+    margin: 0 auto;
     background: #f06c64;
     border-bottom: 6px solid#ea676b;
 }
@@ -155,12 +156,13 @@ main {
     box-sizing: border-box;
     padding: 43px 40px 68px 40px;
     height: 500px;
+    max-width: 1020px;
+    margin: 0 auto;
     background: #f2f2f2;
     border-bottom: 6px solid#ffffff;
 }
 
 .block1 h1 {
-    
     font-family: Lato-Black;
     font-size: 30px;
     line-height: 18px;
@@ -667,5 +669,33 @@ footer p {
     background: none;
 }
 
+.block_message{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: grey;
+    opacity: 0.9;
+    z-index: 2;
+}
+
+.message{
+    margin: 20% auto;
+    width: 300px;
+    background-color: darkgray;
+    padding: 20px;
+    font-family: Lato-Regular;
+    font-size: 20px;
+    color: black;
+}
+
+#message{
+    visibility: hidden;
+}
+
+#description, #theme {
+    font-family: Lato-Regular;
+    font-size: 20px;
+    color: black;
+}
 
 

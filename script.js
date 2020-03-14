@@ -1,4 +1,4 @@
-// function for img blocks addBorder, changeButtonActivity and changeImgOrder
+// function for img blocks addBorder, changeButtonActivity and changeImgOrder for portfolio
 
 const PORTFOLIO = document.querySelectorAll('.portfolio-pictures')[0];
 const ACTIVE_BUTTONS = document.querySelectorAll('.buttons')[0];
@@ -13,10 +13,6 @@ function addBorder(event) {
 }
 
 var imgCollection = document.querySelectorAll('.portfolio-pictures')[0].querySelectorAll('img');
-
-/*for(let i = 1; i < imgCollection.length; i++){
-    imgCollection[i].style.order=i++
-}*/
 
 imgCollection.forEach(function addOrder(value, i, arr){
     let order_number = i++
@@ -43,8 +39,6 @@ function changeImgOrder(event) {
     })
 }
 
-
-
 // function for navigation addStyle Active 
 
 const NAVI_BLOCK = document.querySelectorAll('.navbar')[0];
@@ -60,7 +54,26 @@ function addStyleToNavigation(event){
 }
 
 
+// function for form 
 
+const FORM_BUTTON_SUBMIT= document.querySelectorAll('.form-button')[0];
+const FORM_BUTTON_OK= document.querySelectorAll('#button_close')[0];
+const HIDDEN_BLOCK= document.querySelectorAll('#message')[0];
+const FORM = document.querySelectorAll('.form-to-use')[0];
 
+FORM_BUTTON_SUBMIT.addEventListener('click', submitForm, false);
 
+function submitForm(event){
+    event.preventDefault();
+    let subject = document.querySelectorAll('#subject')[0].value.toString();
+    document.querySelectorAll('#theme')[0].innerText = subject;
+    let textArea = document.querySelectorAll('#textarea')[0].value.toString();
+    document.querySelectorAll('#description')[0].innerText = textArea;
+    HIDDEN_BLOCK.style.visibility="visible";
+}
 
+FORM_BUTTON_OK.addEventListener('click', closeMessage, false);
+
+function closeMessage(event){
+    HIDDEN_BLOCK.style.visibility="hidden";
+}

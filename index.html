@@ -179,7 +179,16 @@
                     </div>
                 </div>
             </article>
+            <div class="block_message" id="message">
+                <div class="message">
+                    <h3>Письмо отправлено</h3>
+                    <p>Тема: <span id="theme"></span></p>
+                    <p>Описание: <span id="description"></span></p>
+                    <button type="button" id="button_close">OK</button>
+                </div>
+            </div>
             <article class="form" id="contact">
+                
                 <h1>Get a Quote</h1>
                 <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                 <div class="enter-form">
@@ -187,11 +196,11 @@
                         <form action="#" method="get" name="form" class="form-to-use">
                             <input type="text"  name="Name" placeholder="Name (Required)" required class="name">
                             <input type="email"  name="Mail" placeholder="Email (Required)" required class="mail">
-                            <input type="text"  name="Subject" placeholder="Subject" class="subject">
-                            <textarea name="description" placeholder="Describe your project in detail..." class="textarea"></textarea>
+                            <input type="text"  name="Subject" placeholder="Subject" class="subject" id="subject">
+                            <textarea name="description" placeholder="Describe your project in detail..." class="textarea" id="textarea"></textarea>
                             <button type="submit" class="form-button">Submit</button>
                         </form>
-                    </div>
+                    </div>       
                     <div class="information">
                         <h3>Contact Information</h3>
                         <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis.</p>
@@ -207,7 +216,7 @@
                     </div>
                 </div>
             </article>
-
+            
         </main>
         <footer>
             <p>&copy; Copyright2013</p>
