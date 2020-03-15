@@ -141,17 +141,6 @@ main {
     width: 245px;
 }
 
-/*.off_screen {
-    width: 188px;
-    height: 334px;
-    background: black;
-    position: relative;
-    top: 399px;
-    left: 16px;
-    visibility: hidden;
-    z-index: 1;
-}*/
-
 .screen_hor {
     position: absolute;
     top: 172px;
@@ -159,21 +148,11 @@ main {
     width: 488px;
 }
 
-/*.off_screen_hor {
-    width: 334px;
-    height: 188px;
-    background: black;
-    position: relative;
-    top: 204px;
-    left: 62px;
-    visibility: hidden;
-}*/
-
 .screen_main {
     position: absolute;
-    margin: 0 auto;
     left: 175px;
     top: 52px;
+    z-index: 0;
 }
 
 .buttonl { 
