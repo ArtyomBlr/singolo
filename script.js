@@ -46,11 +46,11 @@ document.addEventListener('scroll', onScroll)
 function onScroll(event) {
 
     const NAVI_BLOCK_A = document.querySelectorAll('.navbar a');
-    const currentPosition = window.scrollY;
+    const currentPosition = window.scrollY + 89;
     const ARTICLES = document.querySelectorAll('article');
 
     ARTICLES.forEach( el => {
-        if(el.offsetTop <= currentPosition && (el.offsetTop + el.offsetHeight +  NAVI_BLOCK_A[0].offsetHeight) > currentPosition){
+        if(el.offsetTop <= currentPosition && (el.offsetTop + el.offsetHeight) > currentPosition){
             NAVI_BLOCK_A.forEach(elem => {
                 elem.classList.remove('active__menu');
                 if(el.getAttribute('id') === elem.getAttribute('href').substring(1)) {
@@ -61,7 +61,7 @@ function onScroll(event) {
     })
 }
 
-const NAVI_BLOCK = document.querySelectorAll('.navbar');
+/*const NAVI_BLOCK = document.querySelectorAll('.navbar');
 
 
 NAVI_BLOCK[0].addEventListener('click', addStyleToNavigation, true);
@@ -72,7 +72,7 @@ function addStyleToNavigation(event){
         NAVI_BLOCK[0].querySelectorAll('a').forEach(el => el.classList.remove('active__menu'));
         event.target.classList.add('active__menu');
     }
-}
+}*/
 
 
 // function for form submitForm and closeMessage
