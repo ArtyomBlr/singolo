@@ -84,6 +84,7 @@ FORM_BUTTON_OK.addEventListener('click', closeMessage, false);
 
 function closeMessage(event){
     HIDDEN_BLOCK.style.visibility="hidden";
+    FORM.reset();
 }
 
 
