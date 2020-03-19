@@ -774,11 +774,11 @@ footer p {
   display: block;
 }
 
-.nextSlider {
+/*.nextSlider {
   position: absolute;
   top: 0;
   width: 100%;
-}
+}*/
 
 .to-left {
     animation-name: left;

@@ -121,7 +121,9 @@ let currentItem = 0;
 let isEnabled = true;
 
 function changeCurrentItem(n) {
-	currentItem = (n + ITEM.length) % ITEM.length;
+    currentItem = (n + ITEM.length) % ITEM.length;
+    console.log(currentItem)
+    console.log(n)
 }
 
 function hideItem(direction) {
@@ -219,11 +221,6 @@ function changeSliderBackGroundRight(){
         MAIN_SLIDER.classList.add('slider_blue');
     }
 }*/
-
-
-
-
-
 
 
 
