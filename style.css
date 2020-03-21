@@ -397,9 +397,8 @@ main {
 .about-us {
     margin: 0px auto;
     max-width: 1020px;
-    height: 734px;
     box-sizing: border-box;
-    padding: 42px 40px 0px 40px;
+    padding: 42px 40px 68px 40px;
     background: #f2f2f2;
     border-bottom: 6px solid #ffffff;
 }
@@ -423,17 +422,21 @@ main {
 .persons {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
     margin-top: 45px;
 }
 
 .person {
     width: 300px;
+    margin-left: 20px;
+}
+
+.person:first-child {
+    width: 300px;
+    margin-left: 0px;
 }
 
 .person-photo {
-    width: 300px;
+    width: 100%;
 }
 
 .person h3 {
@@ -516,9 +519,8 @@ main {
 .form {
     margin: 0 auto;
     box-sizing: border-box;
-    padding: 41px 39px 18px;
-    width: 1020px;
-    height: 654px;
+    padding: 41px 39px 38px;
+    max-width: 1020px;
     background: #f06c64;
     border: 1px solid #ea676b;
 }
@@ -546,7 +548,8 @@ main {
 }
 
 .main-form {
-    width: 620px;
+    width: 66%;
+    min-width: 442px;
 }
 
 .form-to-use {  
@@ -554,7 +557,7 @@ main {
 }
 
 .name, .mail, .subject, .textarea {
-    width: 619px;
+    width: 100%;
     height: 37px;
     margin-bottom: 17px;
     box-sizing: border-box;
@@ -594,7 +597,6 @@ textarea:-ms-input-placeholder {
 }
 
 .textarea {
-    width: 619px;
     height: 201px;
     margin-bottom: 16px;
     box-sizing: border-box;
@@ -603,7 +605,6 @@ textarea:-ms-input-placeholder {
 }
 
 .form-button {
-    margin-left: 538px;
     width: 80px;
     padding: 10px 14px;
     border-radius: 5px;
@@ -668,11 +669,12 @@ textarea:-ms-input-placeholder {
 footer {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     margin: 0 auto;
     box-sizing: border-box;
     padding: 0px 40px 0px 42px;
-    width: 1020px;
+    max-width: 1020px;
     height: 76px;
     background-color: #2d303a;
 }
@@ -686,8 +688,6 @@ footer p {
 }
 
 .footer-links {
-    position: relative;
-    left: 693px;
     display: flex;
     flex-direction: row;
 }
