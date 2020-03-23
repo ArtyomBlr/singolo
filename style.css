@@ -209,8 +209,7 @@ main {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    padding: 43px 40px 68px 40px;
-    height: 500px;
+    padding: 43px 40px 48px 40px;
     max-width: 1020px;
     margin: 0 auto;
     background: #f2f2f2;
@@ -323,7 +322,7 @@ main {
 .portfolio {
     margin: 0 auto;
     max-width: 1020px;
-    height: 863px;
+    padding-bottom: 39px;
     background: #2d303a;
     border-bottom: 6px solid #323746;
 }
@@ -384,14 +383,11 @@ main {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 10px 40px;
-    height: 600px;
-    overflow: hidden;
 }
 
 .picture {
     margin-bottom: 19px;
     width: 220px;
-    height: 188px;
 }
 
 .about-us {
@@ -519,7 +515,7 @@ main {
 .form {
     margin: 0 auto;
     box-sizing: border-box;
-    padding: 41px 39px 38px;
+    padding: 41px 39px 14px;
     max-width: 1020px;
     background: #f06c64;
     border: 1px solid #ea676b;
@@ -548,8 +544,7 @@ main {
 }
 
 .main-form {
-    width: 66%;
-    min-width: 442px;
+    width: 620px;
 }
 
 .form-to-use {  
@@ -809,4 +804,46 @@ footer p {
       left: 0;
     }
   }
+
+  /* --------------------------------- responsive -----------------------------------*/
+
+@media screen and (max-width: 1019px) {
+    
+    .main-form {
+        width: 66%;
+        min-width: 442px;
+    }
+
+}
+
+@media screen and (max-width: 767px) and (min-width: 375px) {
+
+    footer {
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+        background-color: red;
+    }
+
+    footer p{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 374px){
+
+    footer {
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+        background-color: red;
+    }
+
+    footer p{
+        display: none;
+    }
+
+}
+
 
