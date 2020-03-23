@@ -544,7 +544,7 @@ main {
 }
 
 .main-form {
-    width: 620px;
+    width: 66%;
 }
 
 .form-to-use {  
@@ -807,42 +807,53 @@ footer p {
 
   /* --------------------------------- responsive -----------------------------------*/
 
-@media screen and (max-width: 1019px) {
+
+@media screen and (max-width: 1019px) and (min-width: 768px) {
     
     .main-form {
-        width: 66%;
         min-width: 442px;
     }
 
 }
 
-@media screen and (max-width: 767px) and (min-width: 375px) {
-
-    footer {
+@media screen and  (max-width: 767px) {
+    
+    .enter-form {
         display: flex;
-        margin: 0 auto;
-        justify-content: center;
-        background-color: red;
+        flex-direction: column;
+    }
+    
+    .main-form {
+        width: 100%;
+        min-width: 315px;
     }
 
-    footer p{
+    .information {
+        width: 100%;
+        padding: 10px 0px;
+    }
+    
+    footer {
+        justify-content: center;
+    }
+    
+    footer p {
         display: none;
     }
-
+    
 }
 
-@media only screen and (max-width: 374px){
-
-    footer {
-        display: flex;
-        margin: 0 auto;
-        justify-content: center;
-        background-color: red;
+@media screen and  (max-width: 374px) {
+    
+    .main-form {
+        width: 100%;
+        min-width: 275px;
     }
 
-    footer p{
-        display: none;
+    .information {
+        width: 100%;
     }
+    
 
 }
 
