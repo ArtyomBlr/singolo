@@ -40,7 +40,8 @@ header {
 
 .fixed-header {
     position: fixed;
-    width: 1020px;
+    max-width: 1020px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     height: 89px;
@@ -239,7 +240,7 @@ main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 29px;
 }
 
@@ -381,12 +382,17 @@ main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 10px 40px;
+    justify-content: center;
+    padding: 10px 20px 10px 40px;
 }
+
+.portfolio-pictures:nth-child(n+13) {
+    display: none;
+  }
 
 .picture {
     margin-bottom: 19px;
+    margin-right: 20px;
     width: 220px;
 }
 
@@ -810,6 +816,10 @@ footer p {
 
 @media screen and (max-width: 1019px) and (min-width: 768px) {
     
+    .person {
+        margin-left: 15px;
+    }
+    
     .main-form {
         min-width: 442px;
     }
@@ -818,6 +828,26 @@ footer p {
 
 @media screen and  (max-width: 767px) {
     
+    .about-us {
+        padding: 42px 40px 45px 40px;
+    }
+    
+    .persons {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .person:first-child {
+        margin-top: 0px;
+    }
+
+    .person {
+        margin-left: 0px;
+        margin-top: 34px;
+    }
+    
+        
     .enter-form {
         display: flex;
         flex-direction: column;
@@ -826,6 +856,10 @@ footer p {
     .main-form {
         width: 100%;
         min-width: 315px;
+    }
+
+    .form-button {
+        width: 100%;
     }
 
     .information {
