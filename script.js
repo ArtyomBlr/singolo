@@ -228,11 +228,14 @@ const VERTICAL_PHONE = document.querySelectorAll('.screen_ver')[0];
 const HORIZONTAL_PHONE = document.querySelectorAll('.screen_hor')[0];
 const GROUP_PHONE = document.querySelectorAll('.screen_main')[0];
 
-const createDivVertical = document.createElement("div");
+const OFFSCREEN_HOR = document.querySelectorAll('.off_screen_hor')[0];
+const OFFSCREEN_VER = document.querySelectorAll('.off_screen_ver')[0];
+
+/*const createDivVertical = document.createElement("div");
 const createDivHorizontal = document.createElement("div");
 
 VERTICAL_PHONE.appendChild(createDivVertical);
-HORIZONTAL_PHONE.appendChild(createDivHorizontal);
+HORIZONTAL_PHONE.appendChild(createDivHorizontal);*/
 
 /*const createDivMain1 = document.createElement("div");
 const createDivMain2 = document.createElement("div");
@@ -247,8 +250,8 @@ const createDivOffScreenMain3 = document.createElement("div");*/
 let phoneBlock2 = GROUP_PHONE.appendChild(createDivMain2);
 let phoneBlock3 = GROUP_PHONE.appendChild(createDivMain3);*/
 
-createDivVertical.style.cssText = "position: absolute; top: 66px; left: 16px; width: 189px; height: 334px; border-radius: 2px; background: black; visibility: hidden;"
-createDivHorizontal.style.cssText = "position: absolute; top: 16px; left: 62px; width: 334px; height: 189px; border-radius: 2px; background: black; visibility: hidden;"
+//createDivVertical.style.cssText = "position: absolute; top: 66px; left: 16px; width: 189px; height: 334px; border-radius: 2px; background: black; visibility: hidden;"
+//createDivHorizontal.style.cssText = "position: absolute; top: 16px; left: 62px; width: 334px; height: 189px; border-radius: 2px; background: black; visibility: hidden;"
 
 /*phoneBlock1.style.cssText = "position: absolute; top: 109px; left: 0px; width: 140px; height: 298px; border-radius: 17px; z-index: 2;"
 phoneBlock2.style.cssText = "position: absolute; top: 0px; left: 140px; width: 228px; height: 485px; border-radius: 28px; z-index: 2;"
@@ -262,25 +265,37 @@ let offScreenBlock3 = phoneBlock3.appendChild(createDivOffScreenMain3);*/
 offScreenBlock2.style.cssText = "position: absolute; top: 69px; left: 14px; width: 201px; height: 354px; border-radius: 2px; background: black; z-index: 3; visibility: hidden;"
 offScreenBlock3.style.cssText = "position: absolute; top: 40px; right: 8px; width: 125px; height: 219px; border-radius: 2px; background: black; z-index: 3; visibility: hidden;"
 */
-VERTICAL_PHONE.addEventListener('click', offScreenVertical)
 
-function offScreenVertical() {
-    if (createDivVertical.style.visibility === 'hidden') {
-        createDivVertical.style.visibility = 'visible';
-    } else if (createDivVertical.style.visibility === 'visible') {
-        createDivVertical.style.visibility = 'hidden';
-    };
-}
+//VERTICAL_PHONE.addEventListener('click', offScreenVertical)
 
-HORIZONTAL_PHONE.addEventListener('click', offScreenHorizontal)
+/*function offScreenVertical(event){
+    if(event.target !== event.currentTarget){
+        ACTIVE_BUTTONS.querySelectorAll('.buttons button').forEach(el => el.classList.remove('buttons-style'));
+        ACTIVE_BUTTONS.querySelectorAll('.buttons button').forEach(el => el.classList.add('single-button'));
+        event.target.classList.remove('single-button');
+        event.target.classList.add('buttons-style');
+    }
+}*/
 
-function offScreenHorizontal() {
+/*HORIZONTAL_PHONE.addEventListener('click', offScreenHorizontal)
+
+function offScreenHorizontal(){
+    OFFSCREEN_HOR.style.visibility === 'hidden' ? OFFSCREEN_HOR.style.visibility = 'visible' : OFFSCREEN_HOR.style.visibility = 'hidden';
+}*/
+
+
+
+    /*if(OFFSCREEN_HOR.style.visibility === 'hidden'){
+        OFFSCREEN_HOR.style
+    }*/
+
+/*function offScreenHorizontal() {
     if (createDivHorizontal.style.visibility === 'hidden') {
         createDivHorizontal.style.visibility = 'visible';
     } else if (createDivHorizontal.style.visibility === 'visible') {
         createDivHorizontal.style.visibility = 'hidden';
     };
-}
+}*/
 
 /*phoneBlock1.addEventListener('click', offScreenMain1)
 
