@@ -62,6 +62,7 @@ header {
 
 
 .logo {  
+    position: absolute;
     width: 200px;
     height: 89px;
     box-sizing: border-box;
@@ -881,7 +882,11 @@ footer p {
 
 /* -------------------------------*/
 
-   /* .burger_menu {
+   
+
+
+
+    /* .burger_menu {
         position: absolute;
         left: 0;
         top: 0;
