@@ -85,7 +85,9 @@ const FORM = document.querySelectorAll('.form-to-use')[0];
 FORM_BUTTON_SUBMIT.addEventListener('click', submitForm, false);
 
 function submitForm(event){
-    event.preventDefault();
+
+
+    
     let subject = document.querySelectorAll('#subject')[0].value.toString();
     if(subject == ""){
         document.querySelectorAll('#theme')[0].innerText = "Без темы";
@@ -100,6 +102,8 @@ function submitForm(event){
         document.querySelectorAll('#description')[0].innerText = 'Описание: ' + textArea;
     }
     HIDDEN_BLOCK.style.visibility="visible";
+
+    event.preventDefault();
 }
 
 FORM_BUTTON_OK.addEventListener('click', closeMessage, false);
