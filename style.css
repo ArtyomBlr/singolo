@@ -146,50 +146,66 @@ main {
 }
 
 .wrapper_for_slider {
-    position: relative;
-    display: block;
-    margin: 0 auto;
-    width: 1020px;
-    background: #f06c64;
+    position: absolute;
+    max-width: 1020px;
+    width: 100%;
+    height: 100%;
     animation: 0.5s ease-in-out;
 }
 
 .wrapper_for_slider2 {
-    position: relative;
+    position: absolute;
     display: none;
-    margin: 0 auto;
-    width: 1020px;
-    height: 545px;
+    max-width: 1020px;
+    width: 100%;
+    height: 100%;
     padding-bottom: 49px;
     background: #648BF0;
     animation: 0.5s ease-in-out;
-    
 }
 
 .screen_ver {
     position: absolute;
-    left: 110px;
-    top: 52px;
-    width: 245px;
+    left: 10.9%;
+    top: 9%;
+    width: 24vw;
+    max-width: 245px;
+}
+
+.photo-vertical {
+    max-width: 245px;
+    width: 100%;
 }
 
 .screen_hor {
     position: absolute;
-    top: 172px;
-    right: 109px;
-    width: 488px;
+    top: 29%;
+    left: 41.5%;
+    width: 47.8vw;
+    max-width: 488px;
+}
+
+.photo-horizontal {
+    max-width: 488px;
+    width: 100%;
 }
 
 .screen_main {
     position: absolute;
-    left: 265px;
-    top: 52px;
+    left: 27%;
+    top: 10%;
+    width: 49%;
     z-index: 0;
+}
+
+.phone-group {
+    max-width: 500px;
+    width: 100%;
 }
 
 .buttonl { 
     position: absolute;
-    top: 50%;
+    top: 47%;
     left: 4%;
     z-index: 10;
     width: 16px;
@@ -200,7 +216,7 @@ main {
 
 .buttonr {
     position: absolute;
-    top: 50%;
+    top: 47%;
     right: 4%;
     z-index: 10;
     width: 16px;
@@ -825,32 +841,14 @@ footer p {
 
 @media screen and (max-width: 1019px) and (min-width: 768px) {
   
-    .screen_main {
+   /* .screen_main {
         left: 200px;
         top: 50px;
     }
     
     .phone-group {
         width: 380px;
-    }
-    
-    .screen_ver {
-        left: 100px;
-        top: 60px;
-    }
-    
-    .screen_hor {
-        top: 158px;
-        left: 338px;
-    }
-    
-    .photo-vertical {
-        width: 180px;
-    }
-
-    .photo-horizontal {
-        width: 364px;
-    }
+    }*/
 
     .positions {
         margin-right: 0px;
@@ -991,32 +989,14 @@ footer p {
 
 /* -------------------------------*/
 
-    .screen_main {
+    /*.screen_main {
         left: 102px;
         top: 32px;
     }
     
     .phone-group {
         width: 180px;
-    }
-
-    .screen_ver {
-        left: 56px;
-        top: 31px;
-    }
-    
-    .screen_hor {
-        top: 82px;
-        left: 160px;
-    }
-    
-    .photo-vertical {
-        width: 89px;
-    }
-
-    .photo-horizontal {
-        width: 177px;
-    }
+    }*/
 
     .positions {
         margin-right: 0px;
@@ -1094,32 +1074,14 @@ footer p {
 
 @media screen and  (max-width: 374px) {   
 
-    .screen_main {
+    /*.screen_main {
         left: 102px;
         top: 32px;
     }
     
     .phone-group {
         width: 160px;
-    }
-
-    .screen_ver {
-        left: 43px;
-        top: 14px;
-    }
-    
-    .screen_hor {
-        top: 63px;
-        left: 135px;
-    }
-    
-    .photo-vertical {
-        width: 80px;
-    }
-
-    .photo-horizontal {
-        width: 155px;
-    }
+    }*/
 
     .buttons {
         width: 260px;
@@ -1144,17 +1106,6 @@ footer p {
     
 
 }
-
-
-/*position: absolute;
-top: 12px;
-left: 46px;
-width: 250px;
-height: 141px;
-border-radius: 2px;
-background: black;
-visibility: visible;*/
-
 
 .off_screen_hor {
     position: absolute;

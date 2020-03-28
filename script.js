@@ -280,11 +280,6 @@ function offScreenVertical() {
     };
 }
 
-if(document.documentElement.clientWidth < 1020) {
-    VERTICAL_PHONE.removeEventListener('click', offScreenVertical)
-}
-
-
 
 
 HORIZONTAL_PHONE.addEventListener('click', offScreenHorizontal)
