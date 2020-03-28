@@ -229,6 +229,8 @@ const HORIZONTAL_PHONE = document.querySelectorAll('.screen_hor')[0];
 const GROUP_PHONE = document.querySelectorAll('.screen_main')[0];
 
 const ARTICLE_SLIDER = document.querySelectorAll('.slider')[0];
+const ARTICLE = document.querySelectorAll('article')[0];
+
 
 const OFFSCREEN_HOR = document.querySelectorAll('.off_screen_hor')[0];
 const OFFSCREEN_VER = document.querySelectorAll('.off_screen_ver')[0];
@@ -271,14 +273,17 @@ offScreenBlock3.style.cssText = "position: absolute; top: 40px; right: 8px; widt
 VERTICAL_PHONE.addEventListener('click', offScreenVertical)
 
 function offScreenVertical() {
-
     if (createDivVertical.style.visibility === 'hidden') {
         createDivVertical.style.visibility = 'visible';
     } else if (createDivVertical.style.visibility === 'visible') {
         createDivVertical.style.visibility = 'hidden';
     };
-
 }
+
+if(document.documentElement.clientWidth < 1020) {
+    VERTICAL_PHONE.removeEventListener('click', offScreenVertical)
+}
+
 
 
 
@@ -329,3 +334,74 @@ function offScreenMain3() {
         createDivOffScreenMain3.style.visibility = 'hidden';
     };
 }*/
+
+
+/* ----------------------- burger menu --------------------------- */ 
+
+
+const BURGER = document.querySelectorAll('.burger')[0];
+
+const BURGER_LOGO = document.querySelectorAll('.burger_logo')[0];
+const NEW_LOGO = document.querySelectorAll('.logo')[0];
+const NEW_NAVBAR = document.querySelectorAll('.navbar')[0];
+const NEW_NAVBAR_UL = document.querySelectorAll('.navbar ul')[0];
+const NEW_NAVBAR_LI = document.querySelectorAll('.navbar ul li');
+const NEW_NAVBAR_A = document.querySelectorAll('.navbar ul a');
+const SHADOW = document.querySelectorAll('.shadowX')[0];
+
+
+BURGER.addEventListener('click', createNavigation)
+
+function createNavigation() {
+
+    if(BURGER.style.transform === "rotate(0deg)"){
+        BURGER.style.transform = "rotate(90deg)";
+
+        BURGER_LOGO.classList.add('new_logo')
+        NEW_LOGO.classList.add('new_singolo')
+        NEW_NAVBAR.classList.add('new_navbar')
+        NEW_NAVBAR_UL.classList.add('new_ul')
+
+        NEW_NAVBAR_LI.forEach(el => {
+            el.classList.add('new_li')
+        })
+
+        NEW_NAVBAR_A.forEach(el => {
+            el.classList.add('new_a')
+        })
+
+        SHADOW.classList.add('shadow')
+
+    } else {
+        BURGER.style.transform = "rotate(0deg)";
+
+        BURGER_LOGO.classList.remove('new_logo')
+        NEW_LOGO.classList.remove('new_singolo')
+        NEW_NAVBAR.classList.remove('new_navbar')
+        NEW_NAVBAR_UL.classList.remove('new_ul')
+                
+        SHADOW.classList.remove('shadow')
+
+    }
+
+}
+
+NEW_NAVBAR_A.forEach(el => {
+   el.addEventListener('click', closeNavigation) 
+})
+
+SHADOW.addEventListener('click', closeNavigation)
+
+function closeNavigation() {
+    BURGER.style.transform = "rotate(0deg)";
+
+    BURGER_LOGO.classList.remove('new_logo')
+    NEW_LOGO.classList.remove('new_singolo')
+    NEW_NAVBAR.classList.remove('new_navbar')
+    NEW_NAVBAR_UL.classList.remove('new_ul')
+                
+    SHADOW.classList.remove('shadow')
+}
+
+
+
